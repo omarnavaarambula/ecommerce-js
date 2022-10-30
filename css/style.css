@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+}
+
+
+
+.card-style {
+    margin: 1% 1% 1% 2%;
+    width: 30%;
+    border: 1px solid black;
+    
+}
+.card-buttom{
+    margin-top: 1.1rem;
+    border: 0;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Nav-container*/
+
+
+.nav-container{
+    height: 4rem;
+    background-color: #f6f3f3;
+
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.nav-menu {
+	justify-content: space-between;
+	margin: 0 3rem;
+}
+
+
+.logo-nav {
+	height: 3rem;
+    margin-top: 6px;
+}
+
+.logo-img-nav {
+	height: 100%;
+}
+
+.carrito-img {
+	width: 70%;
+	padding: 12px 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.img-dark-mode {
+	width: 25px;
+	height: 25px;
+    margin-top: 18px;
+    margin-right: 10px;
+    
+	
+}
+.dark-mode-button {
+	
+	
+	cursor: pointer;
+}
+#dark-mode {
+	visibility: hidden;
+}
+html.dark-mode {
+	filter: invert(100%)
+
+}
+
+html.dark-mode .product-img-div{
+	filter: invert(100%);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*logo principal*/
+
+.logo-principal {
+	height: 20rem;
+	background-color: #EB4A5A;
+}
+
+
+.logo-div {
+	text-align: center;
+	width: 20rem;
+    left: 40%;
+
+
+    position: relative;
+    left: 35%;
+   
+    
+}
+.logo-div-academlo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 28%;
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Section-1*/
+#todos__nuestros-productos{
+    color: rgba(48, 47, 47, 0.806);
+}
+.section-container {
+	margin: 5%;
+}
+
+
+.subtitles {
+	justify-content: space-around;
+    margin: 2rem 0;
+}
+
+
+.subtitles h2{
+  margin-left: -12%;
+    
+}
+.product-img-div:hover .product-img{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+}
+
+.product-img-div{
+    overflow:hidden;
+    cursor: pointer;
+    
+}
+.card-style{
+    border: 1px dotted rgba(207, 157, 63, 0.72);
+}
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+/* .product-img {
+    width: 100%;
+}
+
+.div3 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+}
+
+.div4 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+}
+
+.div7 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+}
+
+.div10 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+}
+
+.div13 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+}
+
+.div14 .product-img-div .product-img{
+    width: 100%;
+    height: 223px;
+} */
+
+
+span{
+    margin-left: 0%;
+    font-weight: bold;
+}
+
+p {
+	margin: 0;
+	font-weight: bold;
+}
+
+.card-buttom {
+	width: 99%;
+	height: 10%;
+	background: #eb4a5a;
+	color: white;
+}
+
+.card-buttom:hover{
+    cursor: pointer;
+}
+
+.buttom-first {
+    width: 15%;
+    height: 40px;
+    background: white;
+    border: 1px solid #80808069;
+    position: relative;
+    left: 12%;
+}
+
+.buttom-end {
+	width: 22%;
+	height: 3rem;
+	margin: 6% 0% 0% 39%;
+	background: #eb4a5a;
+	color: white;
+}
+
+/* menu */
+.hidden{
+    display: none;
+}
+.container_menu{
+    background-color: #f6f3f3;
+    width: 35rem;
+    height: 40rem;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    padding: 2rem;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.boton__irAl-carrito{
+    position: absolute;
+    left: 30%;
+    background-color: #EB4A5A;
+    border: 0;
+    width: 15rem;
+    height: 2.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.container_menu{
+    margin: 4% 1%;
+    padding: 1rem;
+    display: flex;
+    position: fixed;
+    overflow: scroll;
+    height: 80%;
+}
+.boton-1{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+.btn{
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border: 1px solid black;
+    justify-content: center;
+    margin-top: 1rem;
+    margin: 2rem;
+}
+.btns{
+    display: inline-flex;
+    margin-top: 2rem;
+}
+.btns >p{
+    display: inline-flex;
+    margin-top: 2rem;
+}
+.boton__basurero{
+    position: absolute;
+    left: 80%;
+    top: 35%;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.card-shopping {
+	display: flex;
+	margin: 15% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card-sp {
+	margin: 20% 0;
+    border: 1px solid rgba(128, 128, 128, 0.31);
+}
+
+.div-img-sp {
+	text-align: center;
+}
+
+.img-sp {
+	height: 60%;
+}
+
+
+.buttom-delete {
+
+    width: 20%;
+    height: 2rem;
+    background-color: rgba(241, 14, 14, 0.858);
+    position: relative;
+    left: 80%;
+    top: 0;
+    border: 0;
+    color:#ffffff;
+    
+
+
+
+}
+.ir-alCarrito{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.product-img-div:hover .product-img{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+}
+
+.product-img-div{
+    overflow:hidden;
+    cursor: pointer;
+    
+}
+.card-style{
+    border: 1px dotted rgba(207, 157, 63, 0.72);
+}
+
+/* FOOTER */
+.footer__academlo-1{
+    background-color: rgba(10, 10, 10, 0.856);
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    
+}
+.iconos__contactos{
+    display: inline-flex;
+    position: relative;
+    top: 3rem; 
+}
+.iconos__contactos > p{
+    margin: 2rem;
+}
+.rigths{
+    position: relative;
+    bottom: -4rem;
+    font-size: .7rem;
+}
+.p__todos{
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    bottom: -4rem;
+}
+
+
+.product-img-div {
+	height: 55%;
+    width: 70%;
+}
+
+.product-img{
+    width: 100%;
+    height: 100%;
+}
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}

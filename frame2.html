@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/styleFrame1.css">
+    <link rel="stylesheet" href="./css/stylesFrame2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="nav-menu row">
+            <div class="logo-nav">
+                <img src="./images/logo_academlo1.png" class="logo-img-nav">
+            </div>
+            <div class="flex">
+                <label for="dark-mode" class="dark-mode-button">
+                    <input id="dark-mode" type="checkbox" 
+                    onclick="document.documentElement.classList.toggle('dark-mode')">
+                    <img src="./images/modooscuro.png" alt="" class="img-dark-mode">
+                    
+                </label>
+                <div class="carrito-img-nav ">
+                    <button class="boton-1" onclick="toggleMenu(), generateShoppingCartList(), totalPrice()"> <img src="./images/agregar-carrito.png"
+                            class="carrito-img"></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="txt__academlo-atras">
+        <p class=>Academlo-Tienda oficial</p>
+    </div>
+    <div class="container__formulario-compras" >
+        <div class="txt__carrito">
+            <h2 class="text__carrito-compras">Carrito de compras</h2>
+        </div>
+        <div class="container__carrito-compras" id="generate-card-shoping">
+            <!-- <div class="img__producto-4">
+                <img class="img__carrito-prod4" src="./images/product-4.png" alt="">
+            </div>
+            <div class="text__seleccion-producto col-6">
+                <h3 class="text__seleccion-producto">Hoodie rojo - logo blanco</h3>
+                <p class="text__seleccion-producto">$265.00</p>
+                <div class="text__detalles-compra">
+                    <p class="text__detalles-compra parrafo__talla">Talla:</p>
+                    <p class="text__detalles-compra">Color:</p>
+                </div>
+                <div class="">
+                    <button class="botones__compra">+</button>
+                    <p>1</p>
+                    <button class="botones__compra">-</button>
+                </div>
+                <div class="">
+                    <button class="boton__basurero">🗑</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="resumen__pedido col-12">
+        <h3>Resumen del pedido</h3>
+        
+        <!-- <p>total</p> -->
+
+        <ul class="pedido">
+            
+            <p>Valor Producto total</p><li class="list-group-item" id="total-price"></li>
+
+        </ul>
+        <button id="boton__fin-compra" class="btn__fin-compra" onclick="finalizarCompra()"><a class="
+            ir-alCarrito" href="./index.html">Finalizar compra</a></button>
+    </div>
+
+    
+    <footer>
+        <div class="footer__academlo-1 fade">
+            <h4>ACADEMLO - TIENDA OFICIAL</h4>
+            <div class="iconos__contactos">
+                <img src="./images/mail 3.svg" alt="">
+                <p>academlo@email.com</p>
+                <img src="./images/phone 3.svg" alt="">
+                <p>+57 317 426 3312</p>
+                <p>+52 618 220 4925</p>
+                <img src="./images/instagram.svg" alt="">
+                <p>@academlo_pag</p>
+            </div>
+            <ul>
+                <a class="p__todos" href="#todos__nuestros-productos"></a>
+            </ul>
+            <p class="rigths">© ACADEMLO. All rigths reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="./javascript/script2.js"></script>
+
+</body>
+
+</html>

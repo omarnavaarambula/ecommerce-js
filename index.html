@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spiner">
+            <div class="spiner">
+                <div class="spiner"><img src="./images/logo_academlo2.png" alt="" id="loader"></div>
+            </div>
+        </div>
+    </div>
+    <div class="no-mostrar">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+    <nav class="nav-container">
+
+        <div class="nav-menu row">
+
+            <div class="logo-nav">
+                
+                <img src="./images/logo_academlo1.png"  class="logo-img-nav">
+
+            </div>
+            <div class="flex">
+                <label for="dark-mode" class="dark-mode-button">
+                    <input id="dark-mode" type="checkbox" 
+                    onclick="document.documentElement.classList.toggle('dark-mode')">
+                    <img src="./images/modooscuro.png" alt="" class="img-dark-mode">
+                    
+                </label>
+                <div class="carrito-img-nav ">
+                    <button class="boton-1" onclick="toggleMenu(), generateShoppingCartList(), totalPrice()"> <img src="./images/agregar-carrito.png"
+                            class="carrito-img"></button>
+                </div>
+            </div>
+
+        </div>
+        
+    </nav>
+    <div id="nav" class="hidden">
+        <!-- carrito de compras -->
+        <div class="container_menu">
+            <!-- Div sin classname, desde 38 hasta 86, abarcando aside.-->
+
+            <!-- <main id="items" class=""></main> -->
+            <!-- Carrito -->
+            <aside class="">
+                <h2>Carrito de compras</h2>
+                <!-- Elementos del carrito -->
+                <!-- <ul id="acarrito" class=""></ul>
+                <div class="img__productos-compra">
+                    <img id="image" src="" alt="">
+                </div>
+                <div class="text__seleccion-producto col-6">
+                    <p class="text__seleccion-producto">Hoodie rojo - logo blanco</p>
+                    <p class="text__seleccion-producto"><span></span>&dollar;</p>
+                    <div class="text__detalles-compra">
+                        <p id="talla" class="text__detalles-compra parrafo__talla">Talla:</p>
+                        <p id="color" class="text__detalles-compra">Color:</p>
+                    </div>
+                    <div class="btns">
+                        <button class="btn botones__compra-mas" type="button">+</button>
+                        <p type="value">1</p>
+                        <button class="btn botones__compra-menos" type="button">-</button>
+                    </div>
+
+                    <div class="">
+                        <button class="btn boton__basurero" type="button">🗑</button>
+                    </div>
+                </div>
+                <hr> -->
+
+                <div class="card-shopping " id="generate-card-shoping">
+                    <!-- <div class="div-img-sp">
+                        <img src="./images/product-4.png" class="img-sp">
+                    </div>
+
+                    <div class="data-sp">
+
+                        <p>Sudadera Academlo</p>
+                        <p>Logo blanco, color rojo</p>
+                        <p>ID: 4</p>
+                        <p>$12.000</p>
+                    </div> -->
+                </div>
+
+                
+                
+
+                    
+                    <!-- Precio -->
+                    <p class="text__subtotal">Subtotal: <span id="total-price">0</span>&dollar;</p>
+                    <button id="boton-ir" class="boton__irAl-carrito"><a class="ir-alCarrito" href="./frame2.html">Ir al carrito</a></button>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="logo-principal">
+        
+        <div class="logo-div">
+            <img class="logo-div-academlo" src="./images/logo_academlo2.png">
+        </div>
+
+    </div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+    <section class="section-1">
+
+        <div class="subtitles row">
+
+            <h2 id="todos__nuestros-productos">Todos nuestros productos</h2>
+
+            </div>
+<div class="category_list">
+        <a href="#" class="category_item" category="all">Todos</a>
+        <a href="#" class="category_item" category="sudadera">Sudaderas</a>
+        <a href="#" class="category_item" category="camisa">Camisas</a>
+
+    </div>
+        <div class="section-container ">
+            <div class="section-products row" id="products-container">
+
+            <!-- <img src="./images/product-1.png"></img>
+            <img src="./images/product-2.png"></img>
+            <img src="./images/product-3.png"></img>
+            <img src="./images/product-4.png"></img>
+            <img src="./images/product-5.png"></img>
+            <img src="./images/product-6.png"></img>
+            <img src="./images/product-7.png"></img>
+            <img src="./images/product-8.png"></img> -->
+
+
+           
+        </div>
+
+        <button class ="buttom-end">Mas productos</button>
+    </section>
+
+    <footer>
+    
+
+
+        <div class="footer__academlo-1 fade">
+            <h4>ACADEMLO - TIENDA OFICIAL</h4>
+            <div class="iconos__contactos">
+                <img src="./images/mail 3.svg" alt="">
+                <p>academlo@email.com</p>
+                <img src="./images/phone 3.svg" alt="">
+                <p>+57 317 426 3312</p>
+                <p>+52 618 220 4925</p>
+                <img src="./images/instagram.svg" alt="">
+                <p>@academlo_pag</p>
+            </div>
+            <ul>
+                <a class="p__todos" href="#todos__nuestros-productos">Productos</a>
+            </ul>
+            <p class="rigths">© ACADEMLO. All rigths reserved</p>
+        </div>
+    </footer>
+
+    
+    <script src="./javascript/script.js"></script>
+
+    <script src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/scriptfil.js"></script>
+
+
+
+</body>
+</html>
